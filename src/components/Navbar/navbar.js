@@ -13,7 +13,8 @@ const Navbar = () => {
   return (
     <NavWrapper>
       <div className="masthead flex-container">
-        <img src={Logo} alt="Startup Logo" />
+        {/* <img src={Logo} alt="Startup Logo" /> */}
+        <label>Logo is here</label>
         <button
           className={
             isOpen
@@ -61,7 +62,7 @@ const NavWrapper = styled.nav`
   left: 0;
   right: 0;
   display: flex;
-  padding: 0;
+  padding: 10px;
   box-sizing: border-box;
   background: black;
 

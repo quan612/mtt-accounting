@@ -6,7 +6,7 @@ import perk4Img from "../../images/tax-planning.jpg"
 import perk5Img from "../../images/tax-return.jpg"
 import perk6Img from "../../images/hst.jpg"
 
-import Perk from "./perk"
+import Perk from "./Perk"
 
 import { FlexContainer } from "./style"
 

@@ -61,17 +61,6 @@ const TextBlockImg = ({ title, children, subtitle, id }) => {
 
 const TextBlockImgWrapper = styled.section`
   padding: 100px 30px;
-
-  .content-container {
-    @media (min-width: 1200px) {
-      max-width: 1100px;
-    }
-  }
-
-  p {
-    margin-bottom: 50px;
-    color: black;
-  }
 `
 
 export default TextBlockImg

@@ -37,7 +37,6 @@ const Contact = () => {
           <div className="special-section">
             <h2>{title}</h2>
           </div>
-
           <p>{subtitle}</p>
           <FormikForm />
         </div>

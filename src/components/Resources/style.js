@@ -14,11 +14,11 @@ export const ResourcesContainer = styled.div`
     filter: brightness(40%);
   }
 
-  .content-container {
+  /* .content-container {
     @media (min-width: 1200px) {
       max-width: 1100px;
     }
-  }
+  } */
 
   .resource-links {
     color: black;

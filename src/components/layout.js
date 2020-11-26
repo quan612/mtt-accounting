@@ -52,22 +52,31 @@ const LayoutWrapper = styled.div`
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 3rem;
     text-align: left;
     background: -webkit-linear-gradient(45deg, #f441a5, #f441a5);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 750px) {
+      font-size: 2.4rem;
+    }
   }
 
   h3 {
+    color: #ff4f7d;
     font-size: 1.5rem;
+    @media screen and (max-width: 750px) {
+      font-size: 1.2rem;
+    }
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.45;
     margin: 1rem 0;
+    color: #4b4a4a; //#4b4a4a #727272
 
     @media (min-width: 768px) {
       font-size: 1.1rem;
@@ -82,12 +91,10 @@ const LayoutWrapper = styled.div`
   .content-container {
     margin: 0 auto;
     width: 100%;
-    padding: 0 25px;
-    /* max-width: 500px; */
 
-    /* @media (min-width: 1080px) {
-      max-width: 650px;
-    } */
+    @media (min-width: 1200px) {
+      max-width: 1100px;
+    }
   }
 
   .flex-container {
@@ -109,7 +116,7 @@ const LayoutWrapper = styled.div`
     content: "";
     float: left;
     width: 120px;
-    height: 37px;
+    height: 30px;
     margin-left: -90px;
     margin-right: 20px;
   }

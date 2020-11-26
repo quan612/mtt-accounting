@@ -4,22 +4,8 @@ export const ContactWrapper = styled.section`
   padding: 100px 30px;
   background-color: #eef1f1;
 
-  .content-container {
-    @media (min-width: 1200px) {
-      max-width: 1100px;
-    }
-  }
-
-  p {
-    margin: 4rem 0;
-    color: #4b4a4a;
-
-    /* @media (min-width: 768px) {
-        text-align: center;
-      } */
-  }
-
   form {
+    margin-top: 20px;
     position: relative;
     overflow: hidden;
 
@@ -42,10 +28,8 @@ export const ContactWrapper = styled.section`
       display: block;
       width: 100% !important;
       border: none;
-      /* background-color: #0b132e; */
       background-color: #fff;
-      /* color: #fff; */
-      color: #005aa7;
+      color: #f441a5;
       position: relative;
       box-sizing: border-box;
       outline: none;
@@ -81,7 +65,7 @@ export const ContactWrapper = styled.section`
         bottom: -1px;
         height: 1px;
         color: #f441a5;
-        /* background: linear-gradient(90deg, #f441a5, #03a9f4); */
+
         width: 100%;
         transform: translateX(-100%);
         transition: transform 0.3s ease;

@@ -35,32 +35,24 @@ const Perk = ({ img, alt, title, content }) => {
 }
 
 const PerkWrapper = styled.div`
-  padding: 20px 0;
-  width: 100%;
-  /* margin: 0 auto; */
+  flex-basis: 40%;
+  flex-grow: 1;
+  padding: 0 20px;
+  margin-left: -10px;
+  margin-bottom: 20px;
 
-  @media (min-width: 768px) {
-    padding: 0;
-    max-width: 500px;
-  }
-
-  @media (min-width: 992px) {
-    padding: 0;
-    max-width: 350px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 480px;
+  @media (max-width: 700px) {
+    flex-basis: 100%;
+    padding: 0 10px;
   }
 
   img {
     box-sizing: border-box;
     width: 100%;
-    height: 320px;
     transition: 0.3s ease-in-out;
 
-    @media (min-width: 992px) {
-      height: 300px;
+    @media (min-width: 700px) {
+      height: 280px;
     }
     &:hover {
       transform: translateY(-10px);
@@ -70,16 +62,11 @@ const PerkWrapper = styled.div`
   }
 
   h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ff4f7d;
+    text-align: center;
   }
 
   p {
     text-align: left;
-    font-size: 15px;
-    font-weight: 400;
-    color: #727272;
   }
 `
 

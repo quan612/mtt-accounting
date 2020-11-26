@@ -45,6 +45,7 @@ const Banner = () => {
             animate="visible"
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
+            style={{ color: "#fff" }}
           >
             For individual and Business
           </motion.p>
