@@ -3,8 +3,8 @@ import React from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 
-import FooterTop from "./FooterTop"
-import FooterBottom from "./FooterBottom"
+import FooterTop from "./footerTop"
+import FooterBottom from "./footerBottom"
 import { FooterWrapper } from "./style"
 
 // import socialIcons from "../../constants/social-icons"
