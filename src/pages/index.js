@@ -17,7 +17,7 @@ import { MdDone, MdClear } from "react-icons/md"
 export default () => (
   <>
     <Layout>
-      {/* <Banner /> */}
+      <Banner />
       {/* <TextBlock
         id="about"
         title="Developing a new business is never easy, but Startup is here to help"
