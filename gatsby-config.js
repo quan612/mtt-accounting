@@ -34,7 +34,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: "Raleway",
+            family: "Raleway, Martel Sans",
             variable: true,
             weights: ["200..900"],
           },

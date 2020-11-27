@@ -1,33 +1,30 @@
 import styled from "styled-components"
 
-export const ResourcesContainer = styled.div`
-  padding: 100px 30px;
-  background-color: #eef1f1;
+export const ResourcesWrapper = styled.div`
+  /* background-color: #eef1f1; */
+  background-color: #fff;
 
   .gatsby-image-wrapper {
-    height: 50vh;
+    height: 50vh !important;
   }
 
   .image-wrapper.gatsby-image-wrapper::before,
   .image-wrapper.gatsby-image-wrapper::after {
-    top: -90px;
-    filter: brightness(40%);
+    top: 0;
+    /* filter: brightness(80%); */
   }
-
-  /* .content-container {
-    @media (min-width: 1200px) {
-      max-width: 1100px;
-    }
-  } */
 
   .resource-links {
     color: black;
+    padding: 80px 30px;
 
     li {
-      color: #a3573d;
+      color: #3f51b5;
       font-size: 1.7rem;
       line-height: 1.8rem;
       padding-bottom: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
     }
 
     a {

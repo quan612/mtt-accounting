@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const ContactWrapper = styled.section`
-  padding: 100px 30px;
   background-color: #eef1f1;
 
   form {
@@ -24,11 +23,11 @@ export const ContactWrapper = styled.section`
       height: 100%;
       font-size: 1.2rem;
       letter-spacing: 0.15rem;
-      padding: 20px 20px 10px 20px;
+      padding: 20px 20px 10px;
       display: block;
       width: 100% !important;
       border: none;
-      background-color: #fff;
+
       color: #f441a5;
       position: relative;
       box-sizing: border-box;

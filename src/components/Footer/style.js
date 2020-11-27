@@ -1,15 +1,11 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  background-color: #fff;
-  padding-top: 100px;
-  padding-left: 25px;
-  padding-right: 25px;
-  overflow: hidden;
-
   width: 100%;
   max-width: 1200px;
+  padding: 100px 25px 0;
   margin: 0 auto;
+  overflow: hidden;
 
   @media screen and (max-width: 750px) {
     padding-top: 80px;
@@ -27,19 +23,15 @@ export const FooterTopWrapper = styled.footer`
   }
 
   p {
-    font-family: "Raleway";
     margin: 0;
   }
 
   p.footer_text {
-    font-size: 18px;
-    color: #4b4a4a;
     margin-bottom: 40px;
   }
 
   a._link_top {
     font-size: 20px;
-    font-family: "Raleway";
     font-weight: 600;
     line-height: 25px;
     color: black;
@@ -70,9 +62,7 @@ export const FooterBottomWrapper = styled.footer`
   .copy_wrapper,
   a._link {
     font-size: 13px;
-    font-family: "Raleway";
     line-height: 28px;
-    color: #4b4a4a;
     padding-bottom: 60px;
     text-decoration: none;
   }

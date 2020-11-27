@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const BannerWrapper = styled.section`
+export const BannerWrapper = styled.div`
   .gatsby-image-wrapper {
     height: 100vh;
     color: #fff;
@@ -27,7 +27,7 @@ export const BannerWrapper = styled.section`
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 4rem;
       line-height: 1.5;
 
       span {
@@ -62,13 +62,13 @@ export const BannerWrapper = styled.section`
       max-width: 800px;
 
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
 
     @media (min-width: 1200px) {
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
   }

@@ -49,15 +49,22 @@ const Banner = () => {
           >
             For individual and Business
           </motion.p>
-          <Link to="services" smooth={true} duration={500}>
-            <span className="sr-only">Jump to about</span>
-            <Button
-              cta="Learn More"
-              label="Banner Learn More"
-              anchor={true}
-              href="linking"
-            />
-          </Link>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={{ ease: "easeOut", duration: 0.8, delay: 2 }}
+          >
+            <Link to="services" smooth={true} duration={500}>
+              <span className="sr-only">Jump to about</span>
+              <Button
+                cta="Learn More"
+                label="Banner Learn More"
+                anchor={true}
+                href="linking"
+              />
+            </Link>
+          </motion.div>
         </div>
       </BackgroundImage>
     </BannerWrapper>

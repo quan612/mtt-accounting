@@ -24,27 +24,26 @@ const FormikForm = () => {
         })
         resetForm({})
       }}
-      //   validate={values => {
-      //     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
-      //     const errors = {}
-      //     if (!values.name) {
-      //       errors.name = "Name Required"
-      //     }
-      //     if (!values.email || !emailRegex.test(values.email)) {
-      //       errors.email = "Valid Email Required"
-      //     }
-      //     if (!values.message) {
-      //       errors.message = "Message Required"
-      //     }
-      //     return errors
-      //   }}
+      validate={values => {
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+        const errors = {}
+        if (!values.name) {
+          errors.name = "Name Required"
+        }
+        if (!values.email || !emailRegex.test(values.email)) {
+          errors.email = "Valid Email Required"
+        }
+        if (!values.message) {
+          errors.message = "Message Required"
+        }
+        return errors
+      }}
     >
       {formik => (
         <form
           name="contact"
-          netlify
-          autoComplete="off"
           onSubmit={formik.handleSubmit}
+          autoComplete="new-password"
         >
           <div className="input-area">
             <input
@@ -52,7 +51,7 @@ const FormikForm = () => {
               name="name"
               aria-label="Name"
               required
-              autoComplete="off"
+              autoComplete="none"
               value={formik.values.name || ""}
               onChange={formik.handleChange}
             />
@@ -68,7 +67,7 @@ const FormikForm = () => {
               name="email"
               aria-label="Email"
               required
-              autoComplete="off"
+              autoComplete="disabledEmail"
               value={formik.values.email || ""}
               onChange={formik.handleChange}
             />
@@ -84,7 +83,7 @@ const FormikForm = () => {
               name="phone"
               aria-label="Phone"
               required
-              autoComplete="off"
+              autoComplete="on"
               value={formik.values.phone || ""}
               onChange={formik.handleChange}
             />

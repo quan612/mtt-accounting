@@ -1,6 +1,5 @@
 import React from "react"
-import ICP from "./icp"
-import { AboutContainer } from "./style"
+import ICP from "../shared/ICP"
 
 import icp1Img from "../../images/bachelor.jpg"
 import icp2Img from "../../images/acca.jpg"
@@ -9,7 +8,7 @@ import icp3Img from "../../images/test-1.png"
 const About = () => {
   const title = "Who Am I?"
   return (
-    <AboutContainer id="about">
+    <section id="about" style={{ backgroundColor: "#eef1f1" }}>
       <div className="content-container">
         <div className="special-section">
           <h2>{title}</h2>
@@ -41,7 +40,7 @@ const About = () => {
           reverse={true}
         />
       </div>
-    </AboutContainer>
+    </section>
   )
 }
 

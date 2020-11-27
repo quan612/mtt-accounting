@@ -1,15 +1,15 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import { ResourcesContainer } from "./style"
+import { ResourcesWrapper } from "./style"
 
 const Resources = () => {
   const title = "Resources"
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "resource-banner.jpg" }) {
+      file(relativePath: { eq: "Discuss product requirements.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200, quality: 90) {
+          fluid(maxWidth: 700, quality: 70) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -18,7 +18,7 @@ const Resources = () => {
   `)
 
   return (
-    <ResourcesContainer id="resources">
+    <ResourcesWrapper id="resources">
       <div className="content-container">
         <BackgroundImage
           Tag="section"
@@ -29,8 +29,33 @@ const Resources = () => {
             <h2>{title}</h2>
           </div>
         </BackgroundImage>
+
         <div className="resource-links">
           <ol>
+            <li>
+              <a
+                href="https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-c/5006-c-19e.pdf"
+                target="_blank"
+              >
+                Ontario Tax Test form
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-c/5006-c-19e.pdf"
+                target="_blank"
+              >
+                Ontario Tax Test form
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-c/5006-c-19e.pdf"
+                target="_blank"
+              >
+                Ontario Tax Test form
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-c/5006-c-19e.pdf"
@@ -58,7 +83,7 @@ const Resources = () => {
           </ol>
         </div>
       </div>
-    </ResourcesContainer>
+    </ResourcesWrapper>
   )
 }
 

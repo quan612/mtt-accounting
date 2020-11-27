@@ -24,11 +24,11 @@ const LayoutWrapper = styled.div`
 
   /* font-family: "Gothic A1", sans-serif; */
   font-family: "Raleway", sans-serif;
-  color: #fff;
-  /* background-color: #060c21; */
-  /* background: linear-gradient(45deg, #060c21, #0d0139); */
-  /* background: linear-gradient(to right, #005aa7, #90b4ce); */
   background-color: #fff;
+
+  section {
+    padding: 100px 30px;
+  }
 
   h1,
   h2,
@@ -41,6 +41,10 @@ const LayoutWrapper = styled.div`
   }
 
   h1 {
+    @media (max-width: 768px) {
+      font-size: 4rem;
+    }
+
     @media (min-width: 768px) {
       font-size: 1.6rem;
       line-height: 1.3;
@@ -73,17 +77,18 @@ const LayoutWrapper = styled.div`
   }
 
   p {
+    font-family: "Martel Sans", sans-serif;
     font-size: 0.875rem;
     line-height: 1.45;
     margin: 1rem 0;
     color: #4b4a4a; //#4b4a4a #727272
 
     @media (min-width: 768px) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     @media (min-width: 1080px) {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.4;
     }
   }
@@ -119,10 +124,6 @@ const LayoutWrapper = styled.div`
     height: 30px;
     margin-left: -90px;
     margin-right: 20px;
-  }
-
-  .section-padding {
-    padding: 100px 30px;
   }
 
   .text-center {
