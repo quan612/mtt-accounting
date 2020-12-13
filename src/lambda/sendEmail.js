@@ -19,7 +19,7 @@ exports.handler = function(event, context, callback) {
   let { name, email, phone, message } = data
 
   let mailOptions = {
-    from: `${name} <me@samples.mailgun.org>`,
+    from: `${name} <me@info.xbaccountax.ca>`,
     to: "info@xbaccountax.ca, neverlate612@gmail.com",
     subject: "Contact for xbaccountax",
     html: `<table>
