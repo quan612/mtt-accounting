@@ -23,7 +23,7 @@ exports.handler = function(event, context, callback) {
     to:
       "info@xbaccountax.ca, neverlate612@gmail.com, minhtrangtran713@gmail.com",
     subject: "Contact for xbaccountax",
-    text: `<table>
+    html: `<table>
     <tbody>
       <tr>
         <td>Name</td>
