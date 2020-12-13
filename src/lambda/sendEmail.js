@@ -19,10 +19,29 @@ exports.handler = function(event, context, callback) {
   let { name, email, phone, message } = data
 
   let mailOptions = {
-    from: `Excited User <me@samples.mailgun.org>`,
-    to: "neverlate612@gmail.com, quan612@yahoo.com",
-    subject: "Contact message from xbaccountax",
-    text: `From ${name} - ${email} - ${phone}: ${message}`,
+    from: `${email}`,
+    to: "info@xbaccountax.ca, quan612@yahoo.com, minhtrangtran713@gmail.com",
+    subject: "Contact for xbaccountax",
+    text: `<table>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td><b>${name}</b></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><b>${email}</b></td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td><b>${phone}</b></td>
+      </tr>
+      <tr>
+        <td>Message</td>
+        <td><b>${message}</b></td>
+      </tr>
+    </tbody>
+    </table>`,
   }
 
   mg.messages().send(mailOptions, function(error, body) {

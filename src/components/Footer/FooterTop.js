@@ -8,7 +8,7 @@ const FooterTop = () => {
         <p className="footer_text">Toronto office</p>
         <p>
           <a className="_link_top" href="tel:+3250381053">
-            Tel: +1 647 468-0389
+            Tel: +1 647 468 0389
           </a>
           <br />
           <a
@@ -38,14 +38,14 @@ const FooterTop = () => {
         <p className="footer_text">Mississauga office</p>
         <p>
           <a className="_link_top" href="tel:+3250381053">
-            Tel: +1 647 468-0389
+            Tel: +1 647 468 0389
           </a>
           <br />
           <a
             className="_link_top"
             href="javascript:void(location.href='mailto:'+String.fromCharCode(98,114,117,103,103,101,64,118,97,110,114,101,121,98,114,111,117,99,107,46,98,101))"
           >
-            minhtrangtran713@gmail.com
+            info@xbaccountax.ca
           </a>
         </p>
         <p style={{ marginTop: "14px" }}>
