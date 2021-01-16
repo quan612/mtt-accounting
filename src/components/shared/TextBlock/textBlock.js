@@ -49,7 +49,7 @@ const TextBlockWrapper = styled.section`
   }
 
   h2 {
-    color: #ee00b3;
+    color: #4056a1; //#ee00b3
     background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
     -webkit-background-clip: text;
     background-clip: text;

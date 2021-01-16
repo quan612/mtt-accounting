@@ -21,11 +21,11 @@ module.exports = {
   },
   siteMetadata: {
     title: "Minh Trang Tran Tax & Consulting Service",
-    titleTemplate: "%s | Helping startups get started",
+    titleTemplate: "%s | Helping people in all aspects of accounting",
     description: "Providing variety of accounting services",
     author: "Minh Trang Tran",
     image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://www.google.com",
+    siteUrl: "https://xbaccountax.ca",
     twitterUsername: "@mttran",
   },
   plugins: [
@@ -53,5 +53,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }

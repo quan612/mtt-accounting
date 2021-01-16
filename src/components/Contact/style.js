@@ -28,7 +28,7 @@ export const ContactWrapper = styled.section`
       width: 100% !important;
       border: none;
 
-      color: #f441a5;
+      color: #4056a1;
       position: relative;
       box-sizing: border-box;
       outline: none;
@@ -55,7 +55,7 @@ export const ContactWrapper = styled.section`
       height: 100%;
       pointer-events: none;
       font-weight: 500;
-      color: #f441a5;
+      color: #4056a1;
 
       &::after {
         content: "";

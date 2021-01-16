@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import links from "../../constants/links"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "gatsby"
 
 import { NavWrapper } from "./style"
 
@@ -10,11 +10,12 @@ const Navbar = () => {
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
+
   return (
     <NavWrapper>
       <div className="masthead flex-container">
         {/* <img src={Logo} alt="Startup Logo" /> */}
-        <label style={{ color: "#fff" }}>Logo is here</label>
+        {/* <label style={{ color: "#fff" }}>Logo is here</label> */}
         <button
           className={
             isOpen
@@ -36,14 +37,7 @@ const Navbar = () => {
         {links.map((item, index) => {
           return (
             <li key={index}>
-              <Link
-                activeClass="active"
-                to={item.text}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-50}
-              >
+              <Link activeClassName="active" to={item.path}>
                 {item.text}
               </Link>
             </li>

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import "typeface-gothic-a1"
 import "./reset.css"
+import "./tailwind.css"
 import Navbar from "../components/Navbar/navbar"
 import Footer from "./Footer"
 import SEO from "../components/Seo/seo"
@@ -58,7 +59,7 @@ const LayoutWrapper = styled.div`
   h2 {
     font-size: 3rem;
     text-align: left;
-    background: -webkit-linear-gradient(45deg, #f441a5, #f441a5);
+    background: -webkit-linear-gradient(45deg, #4056a1, #4056a1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -69,7 +70,7 @@ const LayoutWrapper = styled.div`
   }
 
   h3 {
-    color: #ff4f7d;
+    color: #4056a1;
     font-size: 1.5rem;
     @media screen and (max-width: 750px) {
       font-size: 1.2rem;
@@ -116,7 +117,7 @@ const LayoutWrapper = styled.div`
   }
 
   .special-section::before {
-    border-bottom: 2px solid #f441a5;
+    border-bottom: 2px solid #4056a1;
     display: block;
     content: "";
     float: left;

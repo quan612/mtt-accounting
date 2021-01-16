@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const ResourcesWrapper = styled.div`
-  /* background-color: #eef1f1; */
   background-color: #fff;
 
   .gatsby-image-wrapper {
@@ -12,6 +11,13 @@ export const ResourcesWrapper = styled.div`
   .image-wrapper.gatsby-image-wrapper::after {
     top: 0;
     /* filter: brightness(80%); */
+  }
+
+  ol,
+  ul {
+    list-style: circle;
+    margin-left: 15px;
+    padding: 0;
   }
 
   .resource-links {

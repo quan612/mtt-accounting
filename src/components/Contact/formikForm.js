@@ -1,5 +1,5 @@
 import React from "react"
-import { Formik, Form, ErrorMessage } from "formik"
+import { Formik, ErrorMessage } from "formik"
 import Button from "../Button/button"
 
 const axios = require("axios")
@@ -14,7 +14,7 @@ const FormikForm = () => {
         phone: "",
         message: "",
       }}
-      onSubmit={async (values, { setErrors, setStatus, resetForm }) => {
+      onSubmit={async (values, { setErrors, resetForm }) => {
         axios.post(endpoints.contact, JSON.stringify(values)).then(response => {
           if (response.status !== 200) {
             setErrors("Email cannot be sent.")

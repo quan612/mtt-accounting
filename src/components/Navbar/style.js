@@ -63,7 +63,7 @@ export const NavWrapper = styled.nav`
         padding-bottom: 5px;
 
         &.active {
-          border-bottom: 2px solid #e609b5;
+          border-bottom: 2px solid #4056a1;
         }
       }
       &:hover {

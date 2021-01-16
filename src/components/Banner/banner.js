@@ -1,10 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { motion } from "framer-motion"
+
 import { BannerWrapper } from "./style"
 import BackgroundImage from "gatsby-background-image"
-import Button from "../Button/button"
-import { Link } from "react-scroll"
-import { motion } from "framer-motion"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -54,17 +53,7 @@ const Banner = () => {
             animate="visible"
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 2 }}
-          >
-            <Link to="services" smooth={true} duration={500}>
-              <span className="sr-only">Jump to about</span>
-              <Button
-                cta="Learn More"
-                label="Banner Learn More"
-                anchor={true}
-                href="linking"
-              />
-            </Link>
-          </motion.div>
+          ></motion.div>
         </div>
       </BackgroundImage>
     </BannerWrapper>

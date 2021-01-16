@@ -15,6 +15,7 @@ export const FooterWrapper = styled.footer`
 export const FooterTopWrapper = styled.footer`
   display: block;
   position: relative;
+  text-align: center;
 
   .eib {
     display: inline-block;
@@ -54,6 +55,7 @@ export const FooterBottomWrapper = styled.footer`
   position: relative;
   margin: 0 auto;
   margin-top: 90px;
+  text-align: center;
 
   @media screen and (max-width: 750px) {
     margin-top: 30px;

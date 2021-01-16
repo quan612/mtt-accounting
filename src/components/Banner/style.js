@@ -31,7 +31,7 @@ export const BannerWrapper = styled.div`
       line-height: 1.5;
 
       span {
-        background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
+        background: -webkit-linear-gradient(45deg, #4056a1, #03a9f4);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;

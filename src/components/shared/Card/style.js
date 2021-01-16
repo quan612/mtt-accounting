@@ -23,6 +23,7 @@ export const CardWrapper = styled.div`
     width: 100%;
     height: 340px;
     transition: 0.3s ease-in-out;
+    border-radius: 20px;
 
     @media (min-width: 768px) {
       height: 280px;
@@ -37,6 +38,7 @@ export const CardWrapper = styled.div`
 
   h3 {
     text-align: center;
+    margin-top: 10px;
   }
 
   p {
