@@ -14,4 +14,4 @@ If you are eligible for the CRSB, you can receive $500 ($450 after taxes withhel
 
 If your situation continues past 1 week, you will need to apply again. You may apply up to a total of 2 weeks between September 27, 2020 and September 25, 2021.
 
-_Source:_ **[Canada Recovery Sickness Benefit](• https://www.canada.ca/en/revenue-agency/services/benefits/recovery-sickness-benefit.html)**
+_Source:_ **[Canada Recovery Sickness Benefit](https://www.canada.ca/en/revenue-agency/services/benefits/recovery-sickness-benefit.html)**

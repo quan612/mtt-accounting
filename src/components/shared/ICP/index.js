@@ -33,12 +33,7 @@ const ICP = ({ img, alt, title, content, reverse = false }) => {
         <div className="icp_content">
           <h3>{title}</h3>
           {content.map((p, index) => {
-            return (
-              <>
-                {p.title && <h4 key={index}>{p.title}</h4>}
-                <p key={index}>{p.msg}</p>
-              </>
-            )
+            return <p key={index}>{p.msg}</p>
           })}
         </div>
       </ICPWrapper>

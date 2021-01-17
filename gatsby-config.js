@@ -21,10 +21,10 @@ module.exports = {
   },
   siteMetadata: {
     title: "Minh Trang Tran Tax & Consulting Service",
-    titleTemplate: "%s | Helping people in all aspects of accounting",
-    description: "Providing variety of accounting services",
+    titleTemplate: "%s | Mississauga Tax Consultant",
+    description: "Mississauga Tax Consultant",
     author: "Minh Trang Tran",
-    image: "/yellow-metal-design-decoration.jpg",
+    image: "/acca.png",
     siteUrl: "https://xbaccountax.ca",
     twitterUsername: "@mttran",
   },

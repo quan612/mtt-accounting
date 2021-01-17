@@ -13,10 +13,6 @@ const FooterTop = () => {
         <div>
           <br />
           <a className="_link_top mt-2" href="#">
-            minhtrangtran713@gmail.com
-          </a>
-          <br />
-          <a className="_link_top mt-2" href="#">
             info@xbaccountax.ca
           </a>
         </div>
